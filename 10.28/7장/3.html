@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>방문 시간이 오전 오후에</title>
+</head>
+<body>
+    <h3>오전이면 lightskyblue, 오후이면 orange 배경</h3>
+    <hr>
+<script>
+    let now = new Date();
+    if(now.getHours()<12) {
+        document.body.style.backgroundColor="lightskyblue";
+    }
+    else document.body.style.backgroundColor="orange";
+
+    document.write("현재 시간 : ");
+    document.write(now.getHours()+"시,");
+    document.write(now.getMinutes()+"분,");
+    document.write(now.getSeconds()+"초");
+</script>
+</body>
+</html>
