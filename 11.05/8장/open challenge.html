@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>겜블링 게임</title>
+<style>
+    div{
+        background-color: white;
+        border: 1px solid violet;
+        width: 300px;
+        height: 100px;
+        color: blue;
+        font-size: 80px;
+        text-align: center;
+    }
+    span{
+        padding: 10px;
+    }
+</style>
+</head>
+<body id="parent">
+    <h3>겜블링 게임</h3>
+    각 숫자를 클릭하면 0에서 2사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.<hr>
+    <div id="gameboard">
+        <span id="0" onclick="change(this)">0</span>
+        <span id="1" onclick="change(this)">0</span>
+        <span id="2" onclick="change(this)">0</span>
+    </div>
+    <script>
+        let flagArr = [1,1,1];
+        function change(obj){
+            let objld = parseInt(obj.id);
+            if(flagArr[objld]==1){
+                flagArr[objld]=0;
+                obj.innerHTML=Math.floor(Math.random()*3);
+            }
+            if((flagArr[0]==0)&(flagArr[1]==0)&(flagArr[2])==0){
+                result();
+            }
+        }
+        function result(){
+            let spanArr = document.getElementByTagName("span");
+            if((spanArr[0].innerHTML==spanArr[1].innerHTML)&((spanArr[1].innerHTML==spanArr[2].innerHTML))){
+                text = "Success(click here to do again)";
+            }else{
+                text = "fail(click here to do again)";
+            }
+            let obj = document.getElementByld("parent");
+            var newP = document.createElement("p");
+            newP.innerHTML = text;
+            newP.addEventListener("click",function(){location.reload();})
+            newP.style.color = "plum";
+            obj.appendChild(newP);
+        }
+    </script>
+</body>
+</html>
