@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>삼성 회사 소개</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles (Optional) -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+    }
+    .navbar {
+      transition: background-color 0.3s ease;
+    }
+    .navbar:hover {
+      background-color: #343a40;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #007bff !important;
+      text-decoration: underline;
+    }
+
+    .section-header {
+      margin-top: 40px;
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      color: #ffffff;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      padding: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .section-content {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #333;
+      padding: 20px;
+      background-color: #ffffff;
+      margin-bottom: 30px;
+      border-left: 5px solid #007bff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .highlight {
+      color: #007bff;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar using Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">삼성</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">홈</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">기업 정보</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">사업 정보</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">지속 가능한 경영</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">채용</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content section -->
+  <section class="container my-5">
+    
+    <!-- Company Overview Section -->
+    <div class="section-header">
+      삼성 소개
+    </div>
+    <div class="section-content">
+      <p>삼성전자는 1938년에 설립된 세계적인 전자기업으로, 본사는 한국 수원에 위치하고 있습니다. 삼성은 다양한 산업 분야에서 활동하고 있으며, 그 중 전자, 반도체, 디스플레이, 모바일 기기, 가전 제품 등에서 두각을 나타내고 있습니다.</p>
+      <p>삼성은 혁신적이고 지속 가능한 기술을 통해 글로벌 시장에서 주요한 역할을 하고 있으며, 고객의 다양한 요구를 충족시키기 위해 끊임없이 노력하고 있습니다. 삼성은 <span class="highlight">AI</span>, <span class="highlight">5G</span>, <span class="highlight">IoT</span>, <span class="highlight">반도체</span>, <span class="highlight">스마트폰</span> 등을 포함한 최신 기술들을 선도하고 있습니다.</p>
+    </div>
+
+    <!-- Vision Section -->
+    <div class="section-header">
+      삼성의 비전
+    </div>
+    <div class="section-content">
+      <p>삼성전자는 <span class="highlight">"인류의 진보와 미래를 선도하는 혁신적인 기업"</span>을 비전으로 삼고 있으며, 다양한 기술 혁신을 통해 고객에게 새로운 가치를 제공합니다. 삼성은 <span class="highlight">5G</span>, <span class="highlight">AI</span>, <span class="highlight">IoT</span>, <span class="highlight">전기차 배터리</span> 등 다양한 미래 기술 분야에서 세계를 선도하고 있습니다.</p>
+    </div>
+
+    <!-- Company Info Section -->
+    <div class="section-header">
+      기업 정보
+    </div>
+    <div class="section-content">
+      <p>삼성전자는 1938년에 설립되어, 오늘날 세계적인 전자기업으로 성장하였습니다. 본사는 한국 수원에 위치하고 있으며, 모바일, 반도체, 가전, 디스플레이 등 다양한 제품을 생산하고 있습니다.</p>
+      <p>삼성은 지속적인 연구 개발을 통해 기술 혁신을 이루어내고 있으며, 고객의 다양한 요구를 충족시키기 위해 노력하고 있습니다.</p>
+    </div>
+
+    <!-- Business Info Section -->
+    <div class="section-header">
+      사업 정보
+    </div>
+    <div class="section-content">
+      <p>삼성전자는 크게 모바일, 반도체, 디스플레이, 가전, IT 서비스 등 다양한 분야에서 사업을 영위하고 있습니다. 특히 반도체 분야는 세계 시장에서 가장 큰 비중을 차지하며, 모바일 사업 또한 글로벌 스마트폰 시장에서 큰 인기를 얻고 있습니다.</p>
+      <p>또한 삼성은 지속적으로 신기술 개발에 투자하여, <span class="highlight">5G</span>, <span class="highlight">인공지능(AI)</span>, <span class="highlight">IoT</span>(사물인터넷), 스마트 홈 등 혁신적인 사업을 확장하고 있습니다.</p>
+    </div>
+
+    <!-- Software Innovation Section -->
+    <div class="section-header">
+      소프트웨어 혁신과 연구 개발
+    </div>
+    <div class="section-content">
+      <p>삼성전자는 <span class="highlight">AI</span>와 <span class="highlight">소프트웨어 개발</span>에 집중적인 투자를 하고 있습니다. 특히, 삼성은 <span class="highlight">AI 연구소</span>와 <span class="highlight">소프트웨어 혁신 센터</span>를 운영하여, 글로벌 수준의 소프트웨어 및 인공지능 기술을 개발하고 있습니다.</p>
+      <p>삼성의 <span class="highlight">AI 기술</span>은 음성 인식, 이미지 분석, 자율 주행 기술 등 다양한 분야에 적용되며, <span class="highlight">AI 학습 플랫폼</span>과 <span class="highlight">클라우드 기반 솔루션</span>을 통해 기업 및 소비자에게 혁신적인 서비스를 제공하고 있습니다.</p>
+      <p>또한 삼성은 <span class="highlight">빅데이터</span> 및 <span class="highlight">블록체인</span> 기술을 활용하여, 스마트 시티, 의료, 금융 등 다양한 분야에서 데이터를 분석하고 처리하는 새로운 방법을 모색하고 있습니다.</p>
+      <p>이러한 기술들은 특히 소프트웨어학과 학생들에게 미래의 기술 트렌드를 이해하고, 실제 산업에 적용할 기회를 제공할 것입니다.</p>
+    </div>
+
+    <!-- Sustainability Info Section -->
+    <div class="section-header">
+      지속 가능한 경영
+    </div>
+    <div class="section-content">
+      <p>삼성전자는 지속 가능한 경영을 위해 다양한 환경 보호 및 사회적 책임 활동을 진행하고 있습니다. 친환경 제품 개발, 재활용 프로그램, 에너지 절약 등의 활동을 통해 기후 변화에 대응하고 있으며, 지역사회와 협력하여 지속 가능한 미래를 만들어 가고 있습니다.</p>
+    </div>
+
+    <!-- Recruitment Section -->
+    <div class="section-header">
+      채용
+    </div>
+    <div class="section-content">
+      <p>삼성전자는 우수한 인재를 채용하여 글로벌 시장에서 혁신을 이끌어 가고 있습니다. 삼성은 창의적이고 열정적인 인재를 찾고 있으며, 다양한 직무와 기회를 제공하고 있습니다. 더불어 직원의 복지와 성장을 중요시하며, 글로벌 리더로서의 역량을 개발할 수 있는 환경을 제공합니다.</p>
+      <p>특히 소프트웨어 개발 및 AI 관련 부문에서 삼성전자는 세계적인 인재를 모집하고 있으며, 다양한 기술 분야에서 혁신적인 프로젝트에 참여할 수 있는 기회를 제공합니다.</p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 삼성전자. 모든 권리 보유.</p>
+  </footer>
+
+  <!-- Bootstrap JS (Optional, if you need Bootstrap components like dropdown, modal, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
